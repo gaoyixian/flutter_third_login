@@ -1,0 +1,43 @@
+group 'com.aicheban.flutter_third_login'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs 'libs','../../plugin/flutter_third_login/android/libs'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    dependencies {
+
+        api 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+        // implementation(name: 'OauthSDK_V.4.0.5', ext: 'aar')
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    useLibrary 'org.apache.http.legacy'
+}
