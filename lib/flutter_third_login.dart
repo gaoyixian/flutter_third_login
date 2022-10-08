@@ -20,6 +20,11 @@ class FlutterThirdLogin {
     return fluwx.registerWxApi;
   }
 
+  static get isWeChatInstalled
+  {
+    return fluwx.isWeChatInstalled;
+  }
+
   static get sendWeChatAuth
   {
     return fluwx.sendWeChatAuth;
