@@ -2,7 +2,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:fluwx/fluwx.dart' as fluwx;
+import 'package:fluwx_no_pay/fluwx_no_pay.dart' as fluwx;
 
 typedef MathCallback = void Function(String method, dynamic arguments);
 

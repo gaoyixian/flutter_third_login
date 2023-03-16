@@ -11,12 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  fluwx:
-    git:
-      url: https://e.coding.net/fangwy/flutter_plugin/fluwx.git
-      ref: 49a64907a9e7b2d281169b11491e0ee33acf79d8
-  # fluwx:
-  #   path: ../fluwx
+  fluwx_no_pay: ^3.12.2
 
 dev_dependencies:
   flutter_test:
