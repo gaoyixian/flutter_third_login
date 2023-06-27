@@ -1,7 +1,9 @@
 
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_third_login/third_longin_widget.dart';
 import 'package:fluwx_no_pay/fluwx_no_pay.dart' as fluwx;
 
 typedef MathCallback = void Function(String method, dynamic arguments);
@@ -63,4 +65,13 @@ class FlutterThirdLogin {
     return result == 'true';
   }
   
+  //----------------------------第三方登陆相关--------------
+  Widget getThirdLoginView(
+    BuildContext context, {
+    required void Function() gooCallBack,
+    required void Function() faceCallBack,
+  }) {
+    return ThirdLoginView(
+        googleCallBack: gooCallBack, facebookCallBack: faceCallBack);
+  }
 }
