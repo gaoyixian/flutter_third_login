@@ -66,7 +66,7 @@ class FlutterThirdLogin {
   }
   
   //----------------------------第三方登陆相关--------------
-  Widget getThirdLoginView(
+ static Widget getThirdLoginView(
     BuildContext context, {
     required void Function() gooCallBack,
     required void Function() faceCallBack,
