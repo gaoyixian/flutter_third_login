@@ -26,7 +26,7 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
               GestureDetector(
                 onTap: widget.googleCallBack,
                 child: Image.asset(
-                  'assets/images/google.png',
+                  'packages/flutter_third_login/assets/images/google.png',
                   width: 40.w,
                   height: 40.w,
                   fit: BoxFit.cover,
@@ -35,7 +35,7 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
               GestureDetector(
                 onTap: widget.facebookCallBack,
                 child: Image.asset(
-                  'assets/images/facebook.png',
+                  'packages/flutter_third_login/assets/images/facebook.png',
                   width: 40.w,
                   height: 40.w,
                   fit: BoxFit.cover,
