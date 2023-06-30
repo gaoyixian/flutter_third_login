@@ -70,8 +70,10 @@ class FlutterThirdLogin {
     BuildContext context, {
     required void Function() gooCallBack,
     required void Function() faceCallBack,
+    required void Function() iosCallBack,
+    required bool isIos,
   }) {
     return ThirdLoginView(
-        googleCallBack: gooCallBack, facebookCallBack: faceCallBack);
+        googleCallBack: gooCallBack, facebookCallBack: faceCallBack, iosCallBack: () {  }, isIos: isIos,);
   }
 }

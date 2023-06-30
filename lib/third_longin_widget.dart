@@ -7,9 +7,13 @@ class ThirdLoginView extends StatefulWidget {
     Key? key,
     required this.googleCallBack,
     required this.facebookCallBack,
+    required this.iosCallBack,
+    required this.isIos,
   }) : super(key: key);
   final Function() googleCallBack;
   final Function() facebookCallBack;
+  final Function() iosCallBack;
+  final bool isIos;
 
   @override
   State<ThirdLoginView> createState() => _ThirdLoginViewState();
@@ -41,6 +45,17 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
                   fit: BoxFit.cover,
                 ),
               ),
+              Visibility(
+                visible: widget.isIos,
+                child:  GestureDetector(
+                onTap: widget.facebookCallBack,
+                child: Image.asset(
+                  'packages/flutter_third_login/assets/images/ios.png',
+                  width: 40.w,
+                  height: 40.w,
+                  fit: BoxFit.cover,
+                ),
+              ),)
             ],
           ),
         );
