@@ -23,7 +23,7 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
   @override
   Widget build(BuildContext context) {
     return  SizedBox(
-          width: MediaQuery.of(context).size.width - 264.w,
+          width: MediaQuery.of(context).size.width - 207.w,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
