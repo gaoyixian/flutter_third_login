@@ -28,7 +28,9 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                onTap: widget.googleCallBack(),
+                onTap: (){
+                  widget.googleCallBack();
+                },
                 child: Image.asset(
                   'packages/flutter_third_login/assets/images/google.png',
                   width: 40.w,
@@ -37,7 +39,9 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
                 ),
               ),
               GestureDetector(
-                onTap: widget.facebookCallBack(),
+                onTap: (){
+                  widget.facebookCallBack();
+                },
                 child: Image.asset(
                   'packages/flutter_third_login/assets/images/facebook.png',
                   width: 40.w,
@@ -48,7 +52,9 @@ class _ThirdLoginViewState extends State<ThirdLoginView> {
               Visibility(
                 visible: widget.isIos,
                 child:  GestureDetector(
-                onTap: widget.facebookCallBack(),
+                onTap: (){
+                  widget.facebookCallBack();
+                },
                 child: Image.asset(
                   'packages/flutter_third_login/assets/images/ios.png',
                   width: 40.w,
