@@ -74,6 +74,6 @@ class FlutterThirdLogin {
     required bool isIos,
   }) {
     return ThirdLoginView(
-        googleCallBack: gooCallBack, facebookCallBack: faceCallBack, iosCallBack: () {  }, isIos: isIos,);
+        googleCallBack: gooCallBack, facebookCallBack: faceCallBack, iosCallBack:iosCallBack, isIos: isIos,);
   }
 }
