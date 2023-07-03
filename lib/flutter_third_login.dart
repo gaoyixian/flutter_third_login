@@ -66,14 +66,27 @@ class FlutterThirdLogin {
   }
   
   //----------------------------第三方登陆相关--------------
- static Widget getThirdLoginView(
-    BuildContext context, {
-    required void Function() gooCallBack,
-    required void Function() faceCallBack,
-    required void Function() iosCallBack,
-    required bool isIos,
-  }) {
-    return ThirdLoginView(
-        googleCallBack: gooCallBack, facebookCallBack: faceCallBack, iosCallBack:iosCallBack, isIos: isIos,);
+//  static Widget getThirdLoginView(
+//     BuildContext context, {
+//     required void Function() gooCallBack,
+//     required void Function() faceCallBack,
+//     required void Function() iosCallBack,
+//     required bool isIos,
+//   }) {
+//     return ThirdLoginView(
+//         googleCallBack: gooCallBack, facebookCallBack: faceCallBack, iosCallBack:iosCallBack, isIos: isIos,);
+//   }
+
+  static String getGoogleImg(){
+    return 'packages/flutter_third_login/assets/images/google.png';
+  }
+
+  static String getFaceBookImg(){
+    return 'packages/flutter_third_login/assets/images/facebook.png';
+  }
+
+  static String getIosImg(){
+    return 'packages/flutter_third_login/assets/images/ios.png';
   }
 }
+
